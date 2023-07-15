@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  noord.hollands.archief.preingest.webapi:
+    image: ${DOCKER_REGISTRY-}noordhollandsarchiefpreingestwebapi
+    build:
+      context: .
+      dockerfile: Noord.Hollands.Archief.Preingest.WebApi/Dockerfile
